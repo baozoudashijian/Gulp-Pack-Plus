@@ -22,5 +22,10 @@
     "gulp-clean-css": "^4.3.0",
     "cross-env": "^7.0.3",
     "yargs": "^7.0.2"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=dev gulp dev-dist",
+    "test": "cross-env NODE_ENV=test gulp test-dist",
+    "product": "cross-env NODE_ENV=product gulp deploy-hash-dist"
   }
 }
